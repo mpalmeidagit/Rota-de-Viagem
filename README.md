@@ -21,7 +21,7 @@ Escolha a rota de viagem mais barata independente da quantidade de conexões. Pa
 
 1. Configurar a string de conexão no projeto da API no appsettings.json.
 
-## Executar Migration
+## Executar Migration como já existe o migration InitialCreate apenas executar o update
 
 > dotnet ef migrations add InitialCreate --startup-project ../TravelPlanner.Api/TravelPlanner.Api.csproj
 
