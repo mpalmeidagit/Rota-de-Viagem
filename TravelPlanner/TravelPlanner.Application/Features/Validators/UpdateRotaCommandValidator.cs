@@ -36,8 +36,7 @@ public class UpdateRotaCommandValidator : AbstractValidator<UpdateRotaCommand>
         When(x => x.Valor.HasValue, () =>
         {
             RuleFor(x => x.Valor!.Value)
-                .GreaterThan(0).WithMessage("Valor deve ser maior que zero")
-                .LessThan(10000).WithMessage("Valor máximo permitido é 9999.99");
+                .GreaterThan(0).WithMessage("Valor deve ser maior que zero");               
         });
 
         // 👉 Pelo menos um campo deve ser fornecido para atualização

@@ -21,8 +21,7 @@ public class CreateRotaCommandValidator : AbstractValidator<CreateRotaCommand>
             .NotEqual("").WithMessage("Destino não pode ser vazio");
 
         RuleFor(x => x.Valor)
-            .GreaterThan(0).WithMessage("Valor deve ser maior que zero")
-            .LessThan(10000).WithMessage("Valor máximo permitido é 9999.99") // 👈 Opcional, ajuste conforme necessário
+            .GreaterThan(0).WithMessage("Valor deve ser maior que zero")          
             .NotEqual(0).WithMessage("Valor não pode ser zero");
     }
 }
