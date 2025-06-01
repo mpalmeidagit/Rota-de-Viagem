@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <Folder Include="Common\Moldes\" />
-    <Folder Include="Features\Validators\" />
   </ItemGroup>
 
 </Project>
