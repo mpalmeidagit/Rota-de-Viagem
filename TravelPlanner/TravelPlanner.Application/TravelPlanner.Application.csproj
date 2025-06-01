@@ -18,5 +18,14 @@
     <ProjectReference Include="..\TravelPlanner.Domain\TravelPlanner.Domain.csproj" />
     <ProjectReference Include="..\TravelPlanner.Infrastructure\TravelPlanner.Infrastructure.csproj" />
   </ItemGroup>
+  
+  
+
+  <ItemGroup>
+    <Folder Include="Common\Moldes\" />
+    <Folder Include="Features\Validators\" />
+    <Folder Include="Features\Rotas\Commands\" />
+    <Folder Include="Features\Rotas\Queries\" />
+  </ItemGroup>
 
 </Project>
