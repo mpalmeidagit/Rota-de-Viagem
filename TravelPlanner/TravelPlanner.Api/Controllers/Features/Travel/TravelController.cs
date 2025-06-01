@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using TravelPlanner.Application.Features.Rotas.Commands;
 using TravelPlanner.Application.Features.Rotas.Queries;
+using TravelPlanner.Domain.Entities;
 
 namespace TravelPlanner.Api.Controllers.Features.Travel
 {
@@ -53,7 +54,7 @@ namespace TravelPlanner.Api.Controllers.Features.Travel
             }
         }
 
-        [HttpGet("melhor-rota")]
+        [HttpGet("best-route")]
         public async Task<IActionResult> GetMelhorRota(
             [FromQuery] string origem,
             [FromQuery] string destino)
@@ -98,7 +99,7 @@ namespace TravelPlanner.Api.Controllers.Features.Travel
                 });
             }
         }
-        [HttpGet]
+        [HttpGet("all-routes")]
         public async Task<IActionResult> GetAll(
             [FromQuery] int pageNumber = 1,
             [FromQuery] int pageSize = 10)
