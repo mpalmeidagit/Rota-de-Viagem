@@ -24,8 +24,6 @@
   <ItemGroup>
     <Folder Include="Common\Moldes\" />
     <Folder Include="Features\Validators\" />
-    <Folder Include="Features\Rotas\Commands\" />
-    <Folder Include="Features\Rotas\Queries\" />
   </ItemGroup>
 
 </Project>
